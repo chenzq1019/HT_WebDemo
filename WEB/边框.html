@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		body {
+			margin: 0px;
+		}
+
+		.borderDemo {
+			width: 10px;
+			height: 10px;
+			padding: 20px 10px 20px 50px;
+			border: 30px solid;
+			border-color: orange blue red green;
+		}
+
+		.tsBorder {
+	 		 width: 10px;
+            height: 10px;
+            margin: 50px auto 0px;
+            border-width: 50px 50px 50px 50px;
+            border-color: #666 #CC0066 #CC9966 #FFCC33;
+            border-style: solid;
+
+		}
+
+		.ount {
+			width: 300px;
+			margin: 0px auto;
+		}
+
+		.content {
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 40px;
+		}
+		.up{
+			/*border-width: 0px 100px 100px 100px;*/
+			border-color: transparent transparent #f8a40c transparent;
+		}
+		.right{
+			/*border-width: 100px 0px 100px 100px;*/
+			border-color: transparent transparent transparent #34ff5b;
+		}
+		.down {
+			/*border-width: 100px 100px 0px 100px;*/
+			border-color: #f50012 transparent  transparent transparent ;
+		}
+		.left {
+			/*border-width: 100px 100px 100px 0px;*/
+			border-color: transparent #8675f9 transparent transparent;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="borderDemo"></div>
+
+	<div class="tsBorder"></div>
+
+	<div class="ount">
+		<div class="content up"></div>
+		<div>上三角</div>
+		<div class="content right"></div>
+		<div>右三角</div>
+		<div class="content down"></div>
+		<div>下三角</div>
+		<div class="content left"></div>
+		<div>左三角</div>
+	</div>
+</body>
+</html>

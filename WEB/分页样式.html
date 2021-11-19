@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			background: #555;
+		}
+		.pagination {
+		  list-style: none;
+		  display: inline-block;
+		  padding: 0;
+		  margin-top: 10px;
+		}
+		.pagination li {
+		  display: inline;
+		  text-align: center;
+		}
+		.pagination a {
+		  float: left;
+		  display: block;
+		  font-size: 14px;
+		  text-decoration: none;
+		  padding: 5px 12px;
+		  color: #fff;
+		  margin-left: -1px;
+		  border: 1px solid transparent;
+		  line-height: 1.5;
+		}
+		.modal-1 li:first-child a {
+		  -moz-border-radius: 6px 0 0 6px;
+		  -webkit-border-radius: 6px;
+		  border-radius: 6px 0 0 6px;
+		}
+		.modal-1 li:last-child a {
+		  -moz-border-radius: 0 6px 6px 0;
+		  -webkit-border-radius: 0;
+		  border-radius: 0 6px 6px 0;
+		}
+		.modal-1 a {
+		  border-color: #ddd;
+		  color: #4285F4;
+		  background: #fff;
+		}
+		.modal-1 a:hover {
+		  background: #eee;
+		}
+		.modal-1 a.active, .modal-1 a:active {
+		  border-color: #4285F4;
+		  background: #4285F4;
+		  color: #fff;
+		}
+		.modal-2 li:first-child a {
+			-moz-border-radius:50px 0px 0px 50px;
+			-webkit-border-radius:50px 0px 50px;
+			border-radius: 50px 0px 0px 50px;
+		}
+		.modal-2 li:last-child a {
+			border-radius: 0px 50px 50px 0px;
+		}
+		.modal-2 a {
+			color: #333;
+			background-color: #fff
+		}
+		.modal-2 a:hover {
+			background: #eee;
+		}
+		.modal-3 a{
+			border-radius: 50px;
+		}
+
+		.modal-3 a.active {
+			background: green;
+		}
+		.modal-3 a:hover {
+			background: #5dff76;
+		}
+		.modal-4 a {
+			border-radius: 50px;
+			margin: 0px 5px 0px 5px;
+		}
+		.modal-4 li:first-child a {
+			border-radius: 50px 0px 0px 50px;
+		}
+		.modal-4 li:last-child a {
+			border-radius: 0px 50px 50px 0px;
+		}
+		.modal-4 a {
+			background: #f8be11;
+		}
+		.modal-4 a:hover{
+			background: #faed58;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="pagination modal-1">
+		<li><a href="#" class="prev">&laquo</a></li>
+		<li><a href="#" class="active">1</a></li>
+		<li><a href="">2</a></li>
+		<li><a href="">3</a></li>
+		<li><a href="">4</a></li>
+		<li><a href="">5</a></li>
+		<li><a href="">6</a></li>
+		<li><a href="">7</a></li>
+		<li><a href="">8</a></li>
+		<li><a href="">9</a></li>
+		<li><a href="#" class="next">&raquo</a></li>
+	</ul>
+
+	<ul class="pagination modal-2">
+		<li><a href="#" class="prev">&laquo</a></li>
+		<li><a href="">1</a></li>
+		<li><a href="">2</a></li>
+		<li><a href="" class="active">3</a></li>
+		<li><a href="">4</a></li>
+		<li><a href="">5</a></li>
+		<li><a href="">6</a></li>
+		<li><a href="">7</a></li>
+		<li><a href="">8</a></li>
+		<li><a href="">9</a></li>
+		<li><a href="#" class="next">&raquo;</a></li>
+	</ul>
+
+	<ul class="pagination modal-3">
+		<li><a href="#" class="prev">&laquo</a></li>
+		<li><a href="">1</a></li>
+		<li><a href="">2</a></li>
+		<li><a href="">3</a></li>
+		<li><a href="">4</a></li>
+		<li><a href="">5</a></li>
+		<li><a href="" class="active">6</a></li>
+		<li><a href="">7</a></li>
+		<li><a href="">8</a></li>
+		<li><a href="">9</a></li>
+		<li><a href="#" class="next">&raquo;</a></li>
+	</ul>
+
+
+	<ul class="pagination modal-4">
+		<li><a href="#" class="prev">&laquo Previous</a></li>
+		<li><a href="">1</a></li>
+		<li><a href="">2</a></li>
+		<li><a href="">3</a></li>
+		<li><a href="">4</a></li>
+		<li><a href="">5</a></li>
+		<li><a href="" class="active">6</a></li>
+		<li><a href="">7</a></li>
+		<li><a href="">8</a></li>
+		<li><a href="">9</a></li>
+		<li><a href="#" class="next">Next &raquo;</a></li>
+	</ul>
+</body>
+</html>

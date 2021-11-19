@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box {
+			width: 100px;
+			height: 100px;
+			padding: 100px;
+			margin: 100px auto;
+			background-color: red;
+			perspective: 300px;
+		}
+		#val {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			background: blue;
+			transition: 1s;
+			transform-style: preserve-3d; 
+			transform-origin: center center -50px: 
+		}
+
+		#val div{
+			width: 100px;
+			height: 100px;
+			font:40px/100px "simhei";
+			position: absolute;
+			text-align: center;
+			
+		}
+
+		#val div:nth-of-type(1){
+			background: green;
+			top: -100px;
+			transform-origin: bottom;
+			transform: rotateX(90deg);
+		}
+		#val div:nth-of-type(2){
+			background: yellow;
+			left: -100px;
+			transform-origin: right;
+			transform: rotateY(-90deg);
+		}
+		#val div:nth-of-type(3){
+			background: pink;
+			left: 100px;
+			transform-origin: left;
+			transform: rotateY(90deg);
+		}
+		#val div:nth-of-type(4){
+			background: orange;
+			top:100px;
+			transform-origin: top;
+			transform: rotateX(-90deg);
+		}
+		#val div:nth-of-type(5){
+			background: blue;
+		}
+		#val div:nth-of-type(6){
+			background: white;
+
+			transform: translateZ(-100px) rotateX(-180deg);
+		}
+
+		#box:hover #val{
+			transform: rotateX(340deg) rotateY(90deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id = "val">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
+	</div>
+</body>
+</html>

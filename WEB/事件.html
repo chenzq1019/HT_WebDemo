@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#wap {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+
+			
+		}
+
+	</style>
+
+</head>
+<body >
+	<div id="wap"></div>
+</body>
+
+<script type="text/javascript">
+
+	var h1 = document.getElementById('wap')
+	// alert(h1.innerHTML)
+	//
+   document.getElementById
+	h1.innerHTML = "Hello event"
+
+    window.onclick = function(e){
+
+		var ev = e || window.event;
+		
+		var x = ev.clientX - 50;
+		var y = ev.clientY - 50;
+
+		console.log(x);
+
+	
+
+		h1.style.left = x + "px" 
+		h1.style.top = y+"px"
+
+	}
+
+    
+
+
+</script>
+</html>

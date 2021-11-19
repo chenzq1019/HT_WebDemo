@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+.container {
+	background: red;
+	width: 50%;
+	height: 400px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+
+}
+
+.child {
+	width: 100px;
+	height: 100px;
+
+}
+
+.first{
+	background: yellow;
+}
+.second{
+	background: blue;
+}
+.four{
+	background: green;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="child first"></div>
+	<div class="child second"></div>
+	<div class="child four"></div>
+		<div class="child first"></div>
+	<div class="child second"></div>
+	<div class="child four"></div>
+		<div class="child first"></div>
+	<div class="child second"></div>
+	<div class="child four"></div>
+		<div class="child first"></div>
+	<div class="child second"></div>
+	<div class="child four"></div>
+
+</div>
+</body>
+</html>
